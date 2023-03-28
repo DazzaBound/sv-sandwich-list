@@ -63,7 +63,7 @@ span{
 	margin: 15px;
 }
 #recipe{
-	margin-top: 15px;
+	margin: 15px 0 15px 0;
 }
 #encounter2, #simpleShiny, #relaxedShiny{
 	background: rgba(255,255,255,0.15);
