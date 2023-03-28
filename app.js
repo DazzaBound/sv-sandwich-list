@@ -39,13 +39,16 @@ function buildSimple(t) {
    document.getElementById("recipeContainerSS").appendChild(Object.assign(document.createElement("ul"),{id:"seasoning2",}));
 	ingredientCard(recipe[t].simpleShiny.secondaryIng.hm1, "seas", 2);
 	document.getElementById("seasoning2").appendChild(Object.assign(document.createElement("li"),{id:"opt2"}))
+  if (recipe[t].simpleShiny.secondaryIng.hm2.length > 1) {
+    document.getElementById("opt2").style.justifyContent = "center";
+  }
 	recipe[t].simpleShiny.secondaryIng.hm2.forEach(function(i, index){
       let length = recipe[t].simpleShiny.secondaryIng.hm2.length
       if (length > 1) {
          if(index == 0) {
-		      document.getElementById("opt2").innerHTML += "<img src="+ingredients[i].url+"><div class='ingName'>"+ingredients[i].name.replace(/ .*/,'')+"</div>";
+		      document.getElementById("opt2").innerHTML += "<div style='margin-left:10px'><img src="+ingredients[i].url+"><div class='ingName'>"+ingredients[i].name.replace(/ .*/,'')+"</div></div>";
          } else {
-            document.getElementById("opt2").innerHTML += "<div class='smsep'>/</div><img src="+ingredients[i].url+"><div class='ingName'>"+ingredients[i].name.replace(/ .*/,'')+"</div>";
+            document.getElementById("opt2").innerHTML += "<div class='smsep'>or</div><div style='margin-left:10px'><img src="+ingredients[i].url+"><div class='ingName'>"+ingredients[i].name.replace(/ .*/,'')+"</div></div>";
          }
       } else {
          document.getElementById("opt2").innerHTML += "<img src="+ingredients[i].url+"><div class='ingName'>"+ingredients[i].name+"</div>";
