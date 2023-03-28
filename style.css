@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+header {
+	position: sticky;
+	top: 0;
+	padding: 5px 20px 5px 20px;
+	border-radius: 0 0 10px 10px;
+}
+header, footer{
+	background: #26292e;
+	text-align: center;
+	z-index: 2;
+	box-shadow: 0 2px 0 0 rgba(0,0,0,0.15);
+}
+footer{
+	position: fixed;
+	font-size: 16px;
+	padding: 3px 0 3px 0;
+	border-radius: 10px 10px 0 0;
+	max-width: inherit;
+	width: inherit;
+	bottom: 0;
+}
+a{
+	color: #ddd;
+}
+body {
+	color: #ddd;
+	font-size: 28px;
+	font-family: "Nunito";
+	font-weight: 700;
+	background: #36393f;
+	margin: auto;
+	max-width: 960px;
+	width: 100%;
+}
+ul{
+	display: flex;
+	flex-direction: column;
+	padding: 3px 10px 3px 3px;
+	margin: 0;
+	background: rgba(255,255,255,0.15);
+	border-radius: 10px;
+	box-shadow: 0 2px 0 0 rgba(0,0,0,0.4);
+}
+img{
+	height: 35px;
+	object-fit: contain;
+	margin: 0 10px 0 0;
+}
+span{
+	text-align: center;
+}
+#types{
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
+}
+#mainContainer{
+	max-width: 960px;
+	display: grid;
+	margin: 15px;
+}
+#recipe{
+	margin-top: 15px;
+}
+#encounter2, #simpleShiny, #relaxedShiny{
+	background: rgba(255,255,255,0.15);
+	border-radius: 10px;
+	box-shadow: 0 2px 0 0 rgba(0,0,0,0.4);
+	padding: 5px 10px 15px 10px;
+	margin-bottom: 10px;
+}
+.centerContent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul > li{
+	display: flex;
+	align-items: center;
+}
+.ingName{
+	font-size: 15px;
+	text-align: center;
+}
+.sep{
+	display:flex;
+	align-items: center;
+	margin: 0 10px 0 10px;
+}
+.smsep{
+	font-size: 18px;
+	margin: 0 10px 0 10px;
+}
+.notes{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.textbug, .textdark, .textdragon, .textelectric, .textfairy, .textfighting, .textfire, .textflying, .textghost,
+.textgrass, .textground, .textice, .textnormal, .textpoison, .textpsychic, .textrock, .textsteel, .textwater {
+	font-size: 15px;
+	cursor: pointer;
+	border: solid 2px rgba(255,255,255,0.3);
+	border-radius: 5px;
+	text-align: center;
+}
+.textbug{background: #518300;}
+.textdark{background: #433d4c;}
+.textdragon{background: #0052a8;}
+.textelectric{background: #907200;}
+.textfairy{background: #a955a4;}
+.textfighting{background: #b02352;}
+.textfire{background: #cc4408;}
+.textflying{background: #5776a5;}
+.textghost{background: #33548f;}
+.textgrass{background: #2b8721;}
+.textground{background: #b85d2c;}
+.textice{background: #1d8373;}
+.textnormal{background: #6c767c;}
+.textpoison{background: #904cac;}
+.textpsychic{background: #cb4851;}
+.textrock{background: #827649;}
+.textsteel{background: #367489;}
+.textwater{background: #2e78ba;}
+
+@media(max-width: 575px) {
+	header{
+		font-size: 22px;
+	}
+	#types{
+		grid-template-columns: repeat(6, 1fr);
+	}
+	.title{
+		font-size: 19px;
+	}
+	.notes{
+		font-size: 15px;
+	}
+	img{
+		height: 25px;
+	}
+	.ingName{
+		font-size: 12px;
+	}
+	footer{
+		font-size: 12px;
+	}
+}
