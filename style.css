@@ -147,4 +147,8 @@ ul > li{
 	footer{
 		font-size: 12px;
 	}
+	.textbug, .textdark, .textdragon, .textelectric, .textfairy, .textfighting, .textfire, .textflying, .textghost,
+	.textgrass, .textground, .textice, .textnormal, .textpoison, .textpsychic, .textrock, .textsteel, .textwater {
+	font-size: 12px;
+	}
 }
