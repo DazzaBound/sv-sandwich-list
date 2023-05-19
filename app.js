@@ -501,6 +501,7 @@ function ingredientCard(i, t, n) {
       "encounter2": {
         "preset": "Great Noodle Sandwich (#49)",
         "mainIng": [
+          "lettuce",
           "noodles"
         ],
         "secondaryIng": [
